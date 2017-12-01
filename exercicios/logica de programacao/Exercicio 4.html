@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <h1>Logica de Programação</h1>
+    <h2>Exercicio 4</h2>
+    <script>
+        valor = "50";
+        console.log("OPA",typeof valor,typeof valor.valueOf());
+
+        var nome = prompt("Digite seu nome.");
+        var peso = parseInt(prompt("Digite o seu peso!"));
+        var altura = parseFloat(prompt("Digite sua altura em centimetros"));
+        
+        var imc =  peso/(altura*altura);
+        alert("Olá " + nome + " seu imc é: " + imc + 
+        (imc <= 19 ? "\nVocê esta abaixo do peso" : 
+        imc <= 25.8 ? "\nSeu peso esta normal" :
+        imc <= 27.3 ? "\nVocê esta marginalmente acima do peso":
+        imc <= 32.3 ? "\nVocê esta acima do peso ideal": "\n Você esta muito acima do peso (Obeso)"));
+    </script>
+</body>
+</html>
